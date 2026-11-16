@@ -1,6 +1,6 @@
 {
   "name": "invitations",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "title": "Invitations",
   "description": "Invitation links and typed codes for a room, with a payload for a scannable code.",
   "facilities": [
@@ -36,10 +36,10 @@
     }
   ],
   "platforms": [
-    "server",
-    "web",
+    "android",
     "apple",
-    "android"
+    "server",
+    "web"
   ],
   "tools": {
     "node": "26.5.0",
@@ -131,5 +131,162 @@
       }
     ],
     "notes": "Pure functions; no provider involved."
+  },
+  "classes": [
+    {
+      "reference": {
+        "name": "ourapps-ae/invitations-class",
+        "version": "1.0.0",
+        "digest": "9a5cc2b2ef7783e3b43cdb1dd0a12d02ed1d45b378a548c06862a464d8f441e3"
+      },
+      "descriptor": {
+        "format": 1,
+        "name": "ourapps-ae/invitations-class",
+        "version": "1.0.0",
+        "provides": [
+          {
+            "type": "ae/invitations",
+            "version": "1.0.0",
+            "path": "classes/invitations-class/invitations.json",
+            "modules": {
+              "web": [
+                "web/index.ts"
+              ],
+              "server": [
+                "server/index.ts"
+              ],
+              "android": [
+                "android/src/main/java"
+              ],
+              "ios": [
+                "apple/Sources"
+              ],
+              "macos": [
+                "apple/Sources"
+              ],
+              "tvos": [
+                "apple/Sources"
+              ],
+              "windows": [
+                "web/index.ts"
+              ]
+            }
+          }
+        ],
+        "requires": [],
+        "settings": {
+          "type": "object",
+          "properties": {
+            "codeLength": {
+              "type": "integer"
+            },
+            "inviteAddress": {
+              "type": "string",
+              "pattern": "^https?://[A-Za-z0-9.-]+(:[0-9]{1,5})?(/[A-Za-z0-9_/-]*)?$"
+            }
+          },
+          "required": [
+            "codeLength",
+            "inviteAddress"
+          ],
+          "additionalProperties": false
+        },
+        "inventory": [
+          {
+            "path": "classes/invitations-class/check.mjs",
+            "digest": "1756751d6e3b0504d61abe499a7e6c1f222444b2a38e97f71d69c92c3f5a7236"
+          },
+          {
+            "path": "classes/invitations-class/invitations.json",
+            "digest": "faab3821928607a874482e23fac9466d5bb48e50425e2e5080fe875d3073b950"
+          },
+          {
+            "path": "classes/invitations-class/runtime.mjs",
+            "digest": "7440f3891614c423f74668cb5a2445fea58bbfa4d7c740c8e8a855d1d9300d43"
+          }
+        ],
+        "verification": [
+          {
+            "id": "shared",
+            "root": "package",
+            "argv": [
+              "node",
+              "classes/invitations-class/check.mjs"
+            ],
+            "cwd": ".",
+            "prepare": [],
+            "tools": {
+              "node": "26.5"
+            },
+            "fixtures": [
+              "classes/invitations-class/check.mjs"
+            ],
+            "locks": [],
+            "network": false,
+            "timeoutSeconds": 60,
+            "expectedExit": 0,
+            "scope": "required-local",
+            "requirements": []
+          }
+        ]
+      }
+    }
+  ],
+  "implements": [
+    {
+      "name": "ourapps-ae/invitations-class",
+      "version": "1.0.0",
+      "digest": "9a5cc2b2ef7783e3b43cdb1dd0a12d02ed1d45b378a548c06862a464d8f441e3"
+    }
+  ],
+  "upstream": [],
+  "compatibility": {
+    "runtimes": {
+      "node": ">=26.5.0 <27.0.0",
+      "swift": "=6.4.2",
+      "ios": ">=17.0.0",
+      "macos": ">=14.0.0",
+      "tvos": ">=17.0.0",
+      "kotlin": "=2.3.20",
+      "java": ">=17.0.0 <27.0.0",
+      "android": ">=8.0.0"
+    },
+    "frameworks": {},
+    "dependencies": [],
+    "styles": {
+      "scope": "none",
+      "namespaces": [],
+      "conflicts": []
+    }
+  },
+  "maintenance": {
+    "owners": [
+      "Level N Ltd"
+    ],
+    "contact": "https://github.com/ourapps-ae/invitations/issues",
+    "repository": "https://github.com/ourapps-ae/invitations",
+    "updates": {
+      "source": "https://github.com/ourapps-ae/invitations/releases",
+      "strategy": "manual"
+    }
+  },
+  "supportedPlatforms": [
+    "android",
+    "ios",
+    "macos",
+    "server",
+    "tvos",
+    "web",
+    "windows"
+  ],
+  "licence": "Apache-2.0",
+  "licenceFile": "LICENCE",
+  "noticeFile": "NOTICE",
+  "templates": [],
+  "modules": {
+    "web": "web/index.ts",
+    "server": "server/index.ts",
+    "android": "android/src/main/java",
+    "apple": "apple/Sources"
   }
 }
