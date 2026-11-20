@@ -1,6 +1,6 @@
 {
   "name": "invitations",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "title": "Invitations",
   "description": "Invitation links and typed codes for a room, with a payload for a scannable code.",
   "facilities": [
@@ -136,13 +136,17 @@
     {
       "reference": {
         "name": "ourapps-ae/invitations-class",
-        "version": "1.0.0",
-        "digest": "9a5cc2b2ef7783e3b43cdb1dd0a12d02ed1d45b378a548c06862a464d8f441e3"
+        "version": "1.1.0",
+        "digest": "24954ffc9b635c0f44d0081469428a7584b5ff42ec29151a5cc1cfbe9f815928"
       },
       "descriptor": {
-        "format": 1,
+        "format": 2,
         "name": "ourapps-ae/invitations-class",
-        "version": "1.0.0",
+        "version": "1.1.0",
+        "title": "Invitations",
+        "summary": "Invitation links and codes, shared or copied",
+        "category": "people-and-accounts/invitations",
+        "presentation": "none",
         "provides": [
           {
             "type": "ae/invitations",
@@ -235,8 +239,8 @@
   "implements": [
     {
       "name": "ourapps-ae/invitations-class",
-      "version": "1.0.0",
-      "digest": "9a5cc2b2ef7783e3b43cdb1dd0a12d02ed1d45b378a548c06862a464d8f441e3"
+      "version": "1.1.0",
+      "digest": "24954ffc9b635c0f44d0081469428a7584b5ff42ec29151a5cc1cfbe9f815928"
     }
   ],
   "upstream": [],
@@ -247,7 +251,7 @@
       "ios": ">=17.0.0",
       "macos": ">=14.0.0",
       "tvos": ">=17.0.0",
-      "kotlin": "=2.3.20",
+      "kotlin": "=2.4.21",
       "java": ">=17.0.0 <27.0.0",
       "android": ">=8.0.0"
     },
@@ -522,5 +526,11 @@
         "manual": "Without the package manager, install Node 26 from nodejs.org (the installer, or the zip or tar archive with its folder put first on PATH); on Linux also from the NodeSource repository."
       }
     ]
-  }
+  },
+  "release": {
+    "channel": "features",
+    "fixes": []
+  },
+  "images": [],
+  "vulnerabilityWaivers": []
 }
