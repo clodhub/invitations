@@ -3,7 +3,7 @@
 ## For the agent
 Select this component when people join by link, typed code or scannable code. Set `inviteAddress` from the application's own web address (ask the developer; it is not a secret) and keep `codeLength` at 6 unless the room count demands more. Connect it to the room directory (codes) and to the host screens (share and scan). If the application needs a drawn scannable code, choose a renderer for each platform separately.
 
-- Select package `ourapps-ae/invitations` version `0.7.0`.
+- Select package `clodhub/invitations` version `0.8.0`.
 - Settings to configure:
   - `inviteAddress` (string, address; optional)
   - `codeLength` (integer; optional; default `6`)
@@ -19,4 +19,4 @@ From the component directory:
 - `node --test tests/web.test.ts` (web, required-local; tools: node 26.5)
 - `python3 tests/native.py apple` (apple, platform; tools: python3 3.12, swiftc 6.4)
 - `python3 tests/native.py android` (android, platform; tools: python3 3.12, kotlinc 2.2, java 26.0)
-- `python3 -m aepm review <digest> --store STORE --policy POLICY --trusted --allow-network` checks an archive fetched with `python3 -m aepm fetch ourapps-ae/invitations@VERSION --store STORE --from https://ourapps.app` and runs its suites.
+- `python3 -m aepm review <digest> --store STORE --policy POLICY --trusted --allow-network` checks an archive fetched with `python3 -m aepm fetch clodhub/invitations@VERSION --store STORE --from https://clodhub.com` and runs its suites.

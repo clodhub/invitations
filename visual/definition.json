@@ -1,10 +1,10 @@
 {
-  "id": "ourapps-ae.invitations",
+  "id": "clodhub.invitations",
   "name": "Invitations",
   "kind": "component",
   "status": "example",
-  "package": "ourapps-ae/invitations",
-  "version": "0.7.0",
+  "package": "clodhub/invitations",
+  "version": "0.8.0",
   "ports": [
     {
       "id": "invitations",

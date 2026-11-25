@@ -1,6 +1,6 @@
 {
   "name": "invitations",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "title": "Invitations",
   "description": "Invitation links and typed codes for a room, with a payload for a scannable code.",
   "facilities": [
@@ -42,11 +42,11 @@
     "web"
   ],
   "tools": {
-    "node": "26.5.0",
-    "python3": "3.12.8",
-    "swiftc": "6.4.2",
-    "kotlinc": "2.2.0",
-    "java": "26.0.1"
+    "node": "26.5",
+    "python3": "3.12",
+    "swiftc": "6.4",
+    "kotlinc": "2.2",
+    "java": "26.0"
   },
   "suites": [
     {
@@ -57,7 +57,7 @@
         "tests/web.test.ts"
       ],
       "tools": {
-        "node": "26.5.0"
+        "node": "26.5"
       },
       "scope": "required-local",
       "fixtures": [
@@ -73,8 +73,8 @@
         "apple"
       ],
       "tools": {
-        "python3": "3.12.8",
-        "swiftc": "6.4.2"
+        "python3": "3.12",
+        "swiftc": "6.4"
       },
       "fixtures": [
         "tests/apple/main.swift"
@@ -89,9 +89,9 @@
         "android"
       ],
       "tools": {
-        "python3": "3.12.8",
-        "kotlinc": "2.2.0",
-        "java": "26.0.1"
+        "java": "26.0",
+        "kotlinc": "2.2",
+        "python3": "3.12"
       },
       "fixtures": [
         "tests/android/Main.kt"
@@ -135,13 +135,13 @@
   "classes": [
     {
       "reference": {
-        "name": "ourapps-ae/invitations-class",
+        "name": "clodhub/invitations-class",
         "version": "1.1.0",
-        "digest": "24954ffc9b635c0f44d0081469428a7584b5ff42ec29151a5cc1cfbe9f815928"
+        "digest": "5a7abb21dd72f8444c5486210da33037c4359e82d3b35155c40287695d10c77a"
       },
       "descriptor": {
         "format": 2,
-        "name": "ourapps-ae/invitations-class",
+        "name": "clodhub/invitations-class",
         "version": "1.1.0",
         "title": "Invitations",
         "summary": "Invitation links and codes, shared or copied",
@@ -202,7 +202,7 @@
           },
           {
             "path": "classes/invitations-class/invitations.json",
-            "digest": "faab3821928607a874482e23fac9466d5bb48e50425e2e5080fe875d3073b950"
+            "digest": "48ca93ffa9504f95958e8186dd497294c3ef2b7b51e3c7297e5e12669ff6b3a6"
           },
           {
             "path": "classes/invitations-class/runtime.mjs",
@@ -238,9 +238,9 @@
   ],
   "implements": [
     {
-      "name": "ourapps-ae/invitations-class",
+      "name": "clodhub/invitations-class",
       "version": "1.1.0",
-      "digest": "24954ffc9b635c0f44d0081469428a7584b5ff42ec29151a5cc1cfbe9f815928"
+      "digest": "5a7abb21dd72f8444c5486210da33037c4359e82d3b35155c40287695d10c77a"
     }
   ],
   "upstream": [],
@@ -267,10 +267,10 @@
     "owners": [
       "Level N Ltd"
     ],
-    "contact": "https://github.com/ourapps-ae/invitations/issues",
-    "repository": "https://github.com/ourapps-ae/invitations",
+    "contact": "https://github.com/clodhub/invitations/issues",
+    "repository": "https://github.com/clodhub/invitations",
     "updates": {
-      "source": "https://github.com/ourapps-ae/invitations/releases",
+      "source": "https://github.com/clodhub/invitations/releases",
       "strategy": "manual"
     }
   },
