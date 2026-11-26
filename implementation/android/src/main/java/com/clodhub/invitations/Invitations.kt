@@ -1,4 +1,4 @@
-package ae.invitations
+package com.clodhub.invitations
 
 data class Invitation(val code: String, val roomId: String?)
 

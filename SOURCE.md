@@ -11,7 +11,7 @@ What the recipe has is small: one invitation address from the environment (`INVI
   - `scanPayload`: the text and correction level `M` that `DisplayScreen.swift` lines 605-612 hands to Core Image.
   - `generateCode`, `normaliseCode`, `isValidCode`, `formatCode`, `inviteLink`, `parseInvite`: new (`generated-platform`). The recipe has no codes; they are added because the batch asks for invitation links and codes for a room. `normaliseCode` follows the same rule as the room-directory component's join by code.
 - `implementation/web/share.ts`: new (`generated-platform`): system share sheet or clipboard, with injected environment.
-- `implementation/apple/Sources/Invitations.swift`, `implementation/android/src/main/java/ae/invitations/Invitations.kt`: ports of `invitations.ts`, marked `generated-platform`. The Swift scan payload is the data `DisplayScreen.swift` line 607 builds (`Data(text.utf8)`). The Kotlin port is not compiled on the authoring machine (no kotlinc).
+- `implementation/apple/Sources/Invitations.swift`, `implementation/android/src/main/java/com/clodhub/invitations/Invitations.kt`: ports of `invitations.ts`, marked `generated-platform`. The Swift scan payload is the data `DisplayScreen.swift` line 607 builds (`Data(text.utf8)`). The Kotlin port is not compiled on the authoring machine (no kotlinc).
 
 ## Left behind in the recipe
 

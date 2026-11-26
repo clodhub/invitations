@@ -1,5 +1,5 @@
-import ae.invitations.Invitation
-import ae.invitations.Invitations
+import com.clodhub.invitations.Invitation
+import com.clodhub.invitations.Invitations
 
 // The cases of tests/fixtures/invites.json, written out so no JSON library is needed.
 fun main() {

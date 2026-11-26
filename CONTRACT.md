@@ -14,7 +14,7 @@ Two settings. `inviteAddress` (address grammar, optional: without it no links ar
 ## Artefacts and dependencies
 `component.json` maps every `implementation/` source into `components/invitations/`:
 
-- `implementation/android/src/main/java/ae/invitations/Invitations.kt` -> `components/invitations/android/src/main/java/ae/invitations/Invitations.kt`
+- `implementation/android/src/main/java/com/clodhub/invitations/Invitations.kt` -> `components/invitations/android/src/main/java/com/clodhub/invitations/Invitations.kt`
 - `implementation/apple/Sources/Invitations.swift` -> `components/invitations/apple/Sources/Invitations.swift`
 - `implementation/server/invitations.ts` -> `components/invitations/server/invitations.ts`
 - `implementation/web/share.ts` -> `components/invitations/web/share.ts`
@@ -23,7 +23,7 @@ Dependencies: none.
 `tools.lock.json` pins verification tools: node 26.5, python3 3.12, swiftc 6.4, kotlinc 2.2, java 26.0. Licence wording remains deferred.
 
 ## Provided interfaces
-- `interfaces/invitations.json` defines `invitations` (ae/invitations) version 1.0.0 as an OpenRPC 1.3.2 document: the TypeScript functions (tagged `typescript`) and the native `Invitations.*` functions (tagged `swift` and `kotlin`), with the settings, invitation, link grammar and share result as JSON Schema 2020-12.
+- `interfaces/invitations.json` defines `invitations` (com.clodhub/invitations) version 1.0.0 as an OpenRPC 1.3.2 document: the TypeScript functions (tagged `typescript`) and the native `Invitations.*` functions (tagged `swift` and `kotlin`), with the settings, invitation, link grammar and share result as JSON Schema 2020-12.
 
 ## Required interfaces
 None.

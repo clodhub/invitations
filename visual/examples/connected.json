@@ -7,19 +7,19 @@
   "focus": "component",
   "definitions": [
     {
-      "id": "clodhub.invitations",
+      "id": "com.clodhub.invitations",
       "name": "Invitations",
       "kind": "component",
       "status": "example",
-      "package": "clodhub/invitations",
-      "version": "0.8.0",
+      "package": "pkg:clod/com.clodhub/invitations",
+      "version": "0.9.0",
       "ports": [
         {
           "id": "invitations",
           "name": "Invitations",
           "direction": "output",
           "kind": "interface",
-          "type": "ae/invitations",
+          "type": "com.clodhub/invitations",
           "version": "1.0.0"
         }
       ],
@@ -53,7 +53,7 @@
           "name": "Invitations",
           "direction": "input",
           "kind": "interface",
-          "type": "ae/invitations",
+          "type": "com.clodhub/invitations",
           "version": "1.0.0",
           "required": true,
           "cardinality": "one"
@@ -66,7 +66,7 @@
     {
       "id": "component",
       "name": "Invitations",
-      "definition": "clodhub.invitations",
+      "definition": "com.clodhub.invitations",
       "configuration": {}
     },
     {

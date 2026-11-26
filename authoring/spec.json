@@ -1,6 +1,7 @@
 {
   "name": "invitations",
-  "version": "0.8.0",
+  "version": "0.9.0",
+  "sourceRevision": "19905b75dbea89fbfd424d67fe26c81aaed0e018",
   "title": "Invitations",
   "description": "Invitation links and typed codes for a room, with a payload for a scannable code.",
   "facilities": [
@@ -12,7 +13,7 @@
   "provides": [
     {
       "id": "invitations",
-      "type": "ae/invitations",
+      "type": "com.clodhub/invitations",
       "version": "1.0.0",
       "path": "interfaces/invitations.json"
     }
@@ -135,13 +136,13 @@
   "classes": [
     {
       "reference": {
-        "name": "clodhub/invitations-class",
+        "name": "pkg:clod/com.clodhub/invitations-class",
         "version": "1.1.0",
-        "digest": "5a7abb21dd72f8444c5486210da33037c4359e82d3b35155c40287695d10c77a"
+        "digest": "7ba0fd0a2c3c3f78a165071c910fa02549f9619251db47b81e3cf68329183716"
       },
       "descriptor": {
-        "format": 2,
-        "name": "clodhub/invitations-class",
+        "format": 3,
+        "name": "pkg:clod/com.clodhub/invitations-class",
         "version": "1.1.0",
         "title": "Invitations",
         "summary": "Invitation links and codes, shared or copied",
@@ -149,7 +150,7 @@
         "presentation": "none",
         "provides": [
           {
-            "type": "ae/invitations",
+            "type": "com.clodhub/invitations",
             "version": "1.0.0",
             "path": "classes/invitations-class/invitations.json",
             "modules": {
@@ -202,11 +203,11 @@
           },
           {
             "path": "classes/invitations-class/invitations.json",
-            "digest": "48ca93ffa9504f95958e8186dd497294c3ef2b7b51e3c7297e5e12669ff6b3a6"
+            "digest": "f2fb14e03309d9fdab0999bd010750ea904e3c71f31a9833db016e3b04d23e46"
           },
           {
             "path": "classes/invitations-class/runtime.mjs",
-            "digest": "7440f3891614c423f74668cb5a2445fea58bbfa4d7c740c8e8a855d1d9300d43"
+            "digest": "1d85f0dae92d5c6c859cd48a4211a933718ae3e168554a2b00806183c4b661f0"
           }
         ],
         "verification": [
@@ -238,9 +239,9 @@
   ],
   "implements": [
     {
-      "name": "clodhub/invitations-class",
+      "name": "pkg:clod/com.clodhub/invitations-class",
       "version": "1.1.0",
-      "digest": "5a7abb21dd72f8444c5486210da33037c4359e82d3b35155c40287695d10c77a"
+      "digest": "7ba0fd0a2c3c3f78a165071c910fa02549f9619251db47b81e3cf68329183716"
     }
   ],
   "upstream": [],
